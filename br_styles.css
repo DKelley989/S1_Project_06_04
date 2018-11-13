@@ -13,3 +13,112 @@
 
 */
 
+html {
+    background-color: rgb(24, 27, 248);
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 100%;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    box-shadow: rgb(51, 51, 51) 10px 10px 50px, rgb(51, 51, 51) -10px 10px 50px;
+}
+
+header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5%;
+}
+
+section#images1 {
+    text-align: center;
+    float: left;
+}
+
+section#images2 {
+    text-align: center;
+    float: left;
+}
+
+section#images3 {
+    /* text-align: center; */
+}
+
+section#images {
+    position: relative;
+    left: 13%;
+    right: 15%;
+}
+
+section h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+section#bottomLinks {
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+section#bottomLinks nav {
+    display: table;
+    width: 100%;
+}
+
+section#bottomLinks nav ul {
+    display: table-row;
+    list-style-type: none;
+    text-align: center;
+}
+
+section#bottomLinks nav ul li {
+    display: table-cell;
+    text-align: center;
+    width: 25%;
+}
+
+h1#listingHeader {
+    padding-top: 3%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+}
+
+img#logo {
+    border: 2px solid black;
+    background-image: url(br_paper.png);
+}
+
+header nav {
+    display: table;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav ul {
+    display: table-row;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: table-cell;
+    text-align: center;
+    width: 20%;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(24, 27, 248);
+    transition: .2s;
+}
