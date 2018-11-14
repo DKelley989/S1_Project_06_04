@@ -33,6 +33,10 @@ header {
     padding-bottom: 5%;
 }
 
+figcaption {
+    text-align: left;
+}
+
 section#images1 {
     text-align: center;
     float: left;
