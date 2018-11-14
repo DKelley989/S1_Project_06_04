@@ -34,29 +34,6 @@
         </nav>
     </header>
 
-    <section>
-        <h1>Listing Description</h1>
-
-        <br>
-
-        <p>
-            Address:
-            Listing 2048
-            414 Mandel Road
-            Owatonna, MN 55060 <br>
-        </p>
-
-        <br>
-
-        <p>
-            List Price: $412,800
-            &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Square Feet: 3,300 <br>
-            <br>
-            Bedrooms: 4 &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
-            Baths: 2-1/2 <br>
-        </p>
-    </section>
-
     <article>
         <h1 id="listingHeader">Listing 20481</h1>
 
@@ -84,6 +61,53 @@
         </p>
     </article>
 
+    <section>
+        <h1 id="listingDescription">Listing Description</h1>
+
+        <br>
+
+        <p>
+            Address:
+            Listing 2048
+            414 Mandel Road
+            Owatonna, MN 55060 <br>
+        </p>
+
+        <br>
+
+        <p>
+            List Price: $412,800
+            &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Square Feet: 3,300 <br>
+            <br>
+            Bedrooms: 4 &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+            Baths: 2-1/2 <br>
+        </p>
+    </section>
+
+    <div class="slide">
+        <img src="br_photo1.png" alt="Image 1" class="slideshow" />
+        <img src="br_photo2.png" alt="Image 2" class="slideshow" />
+        <img src="br_photo3.png" alt="Image 3" class="slideshow" />
+        <img src="br_photo4.png" alt="Image 4" class="slideshow" />
+        <img src="br_photo5.png" alt="Image 5" class="slideshow" />
+        <img src="br_photo6.png" alt="Image 6" class="slideshow" />
+        <img src="br_photo7.png" alt="Image 7" class="slideshow" />
+        <img src="br_photo8.png" alt="Image 8" class="slideshow" />
+        <img src="br_photo9.png" alt="Image 9" class="slideshow" />
+    </div>
+
+    <div>
+        <h2 class="slideshow-text">Image 1: Front View</h2>
+        <h2 class="slideshow-text">Image 2: Rear View</h2>
+        <h2 class="slideshow-text">Image 3: Side View</h2>
+        <h2 class="slideshow-text">Image 4: Dining Room</h2>
+        <h2 class="slideshow-text">Image 5: Kitchen</h2>
+        <h2 class="slideshow-text">Image 6: Living Room</h2>
+        <h2 class="slideshow-text">Image 7: Bedroom 1</h2>
+        <h2 class="slideshow-text">Image 8: Bedroom 2</h2>
+        <h2 class="slideshow-text">Image 9: Bedroom 3</h2>
+    </div>
+
     <section id="bottomLinks">
         <nav>
             <ul>
@@ -95,50 +119,46 @@
         </nav>
     </section>
 
-    <section id="images">
-        <section id="images1">
-            <figure id="fig1">
-                <img src="br_photo1.png" alt="Front View" />
-                <figcaption>Image 1: Front View</figcaption>
-            </figure>
-            <figure id="fig2">
-                <img src="br_photo2.png" alt="Rear View" />
-                <figcaption>Image 2: Rear View</figcaption>
-            </figure>
-            <figure id="fig3">
-                <img src="br_photo3.png" alt="Side View" />
-                <figcaption>Image 3: Side View</figcaption>
-            </figure>
-        </section>
-        <section id="images2">
-            <figure id="fig4">
-                <img src="br_photo4.png" alt="Dining Room" />
-                <figcaption>Image 4: Dining Room</figcaption>
-            </figure>
-            <figure id="fig5">
-                <img src="br_photo5.png" alt="Kitchen" />
-                <figcaption>Image 5: Kitchen</figcaption>
-            </figure>
-            <figure id="fig6">
-                <img src="br_photo6.png" alt="Living Room" />
-                <figcaption>Image 6: Living Room</figcaption>
-            </figure>
-        </section>
-        <section id="images3">
-            <figure id="fig7">
-                <img src="br_photo7.png" alt="Bedroom 1" />
-                <figcaption>Image 7: Bedroom 1</figcaption>
-            </figure>
-            <figure id="fig8">
-                <img src="br_photo8.png" alt="Bedroom 2" />
-                <figcaption>Image 8: Bedroom 2</figcaption>
-            </figure>
-            <figure id="fig9">
-                <img src="br_photo9.png" alt="Bedroom 3" />
-                <figcaption>Image 9: Bedroom 3</figcaption>
-            </figure>
-        </section>
-    </section>
+    <!-- Script for the image slideshow that changes images every 2.5 seconds. -->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slideshow");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500);
+        }
+    </script>
+
+    <!-- Script for the image names changing underneath the images every 2.5 seconds. -->
+    <script>
+        var myIndex2 = 0;
+        carousel2();
+
+        function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("slideshow-text");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex2++;
+            if (myIndex2 > x.length) {
+                myIndex2 = 1
+            }
+            x[myIndex2 - 1].style.display = "block";
+            setTimeout(carousel2, 2500);
+        }
+    </script>
+
 </body>
 
 </html>
