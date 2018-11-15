@@ -15,10 +15,13 @@
 
 */
 
+/* Structural Styles */
+/* This style sets the background color of the page to a blue color. */
 html {
     background-color: rgb(24, 27, 248);
 }
 
+/* This style centers the body on the page and chages the width to 80%, sets the background color to blanched almond, and gives the body a border and box shadow. */
 body {
     margin-left: auto;
     margin-right: auto;
@@ -29,21 +32,35 @@ body {
     box-shadow: rgb(51, 51, 51) 10px 10px 50px, rgb(51, 51, 51) -10px 10px 50px;
 }
 
+/* This style aligns all text in the header to center of the page and gives the header some top and bottom padding. */
 header {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5%;
 }
 
+/* This style sets the font for h1 headings to Archivo Narrow with and font size off 135%. */
 h1 {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 135%;
 }
 
+/* This style aligns the text of h2 headings to the center of the page and gives them a top padding of 6%. */
 h2 {
     text-align: center;
     padding-top: 6%;
 }
+
+/* This style aligns all text to the center of the page with left and right padding of 6% and and indent of 4%, and sets the font to Cabin with a size of 110%. */
+p {
+    text-align: center;
+    text-indent: 4%;
+    padding: 0% 6% 0% 6%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 110%;
+}
+
+/* Div Styles */
 
 div.slide {
     display: block;
@@ -60,11 +77,6 @@ div.slide img.slideshow {
     height: 450px;
     border: 2px solid black;
     box-shadow: rgb(51, 51, 51) 10px 10px 50px, rgb(51, 51, 51) -10px 10px 50px;
-}
-
-section h1 {
-    text-align: center;
-    text-decoration: underline;
 }
 
 section#bottomLinks {
@@ -100,19 +112,12 @@ h1#listingDescription {
     text-decoration: underline;
 }
 
-p {
-    text-align: center;
-    text-indent: 4%;
-    padding: 0% 6% 0% 6%;
-    font-family: 'Cabin', sans-serif;
-    font-size: 110%;
-}
-
 img#logo {
     border: 2px solid black;
     background-image: url(br_paper.png);
 }
 
+/* Navigation Styles */
 header nav {
     display: table;
     width: 60%;
