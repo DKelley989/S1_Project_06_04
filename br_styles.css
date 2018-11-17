@@ -8,8 +8,8 @@
    Case Problem 4
    
    Browyer Realty Layout Styles
-   Author: 
-   Date: 
+   Author: Dylan Kelley
+   Date:   11.9.18
 	
    Filename: br_styles.css
 
@@ -61,7 +61,7 @@ p {
 }
 
 /* Div Styles */
-
+/* This style affects the slideshow division to display as block with a 600 pixel width and 450 pixel height and to be centered on the page with a 3% top padding. */
 div.slide {
     display: block;
     width: 600px;
@@ -71,6 +71,7 @@ div.slide {
     padding-top: 3%;
 }
 
+/* This style affects the images within the slideshow division to display as block with a 600 pixel width and 450 pixel height with a black border and black box shadow. */
 div.slide img.slideshow {
     display: block;
     width: 600px;
@@ -79,45 +80,36 @@ div.slide img.slideshow {
     box-shadow: rgb(51, 51, 51) 10px 10px 50px, rgb(51, 51, 51) -10px 10px 50px;
 }
 
+/* Section Styles */
+/* This style gives the bottom links section some top and bottom padding. */
 section#bottomLinks {
     padding-top: 5%;
     padding-bottom: 3%;
 }
 
+/* This style displays the nav nested in the bottom links section as table with a width of 100%. */
 section#bottomLinks nav {
     display: table;
     width: 100%;
 }
 
+/* This style displays the unordered list nested in the nav as table-row and aligns the text to the center of the nav, and also removes the default bullet points of the list. */
 section#bottomLinks nav ul {
     display: table-row;
     list-style-type: none;
     text-align: center;
 }
 
+/* This style displays the list items within the unordered list as table-cell and aligns them to the center of the list with a width of 25%. */
 section#bottomLinks nav ul li {
     display: table-cell;
     text-align: center;
     width: 25%;
 }
 
-h1#listingHeader {
-    text-align: center;
-    text-decoration: underline;
-}
-
-h1#listingDescription {
-    padding-top: 3%;
-    text-align: center;
-    text-decoration: underline;
-}
-
-img#logo {
-    border: 2px solid black;
-    background-image: url(br_paper.png);
-}
-
 /* Navigation Styles */
+/* These styles create a horizontal navigation menu in the header beneath the logo image. */
+/* This style displays the nav nested in the header as a table and centers it on page with a width of 60%. */
 header nav {
     display: table;
     width: 60%;
@@ -125,11 +117,13 @@ header nav {
     margin-right: auto;
 }
 
+/* This style displays the unordered list nested in the nav as table-row and removes the list's bullet points. */
 header nav ul {
     display: table-row;
     list-style-type: none;
 }
 
+/* This style displays list items within their unordered list as table-cell and aligns them to the center of the unordered list with a width of 20% and font type of Cabin. */
 header nav ul li {
     display: table-cell;
     text-align: center;
@@ -137,14 +131,36 @@ header nav ul li {
     font-family: 'Cabin', sans-serif;
 }
 
+/* This style changes the color of hypertext links nested in the list items to black with a font type of Cabin and removes the default underline of hypertext. */
 nav ul li a {
     color: black;
     text-decoration: none;
     font-family: 'Cabin', sans-serif;
 }
 
+/* This style affects links to change their color to a blue when hovered over as well as make them bolder with a .2 second transition. */
 nav ul li a:hover {
     color: rgb(24, 27, 248);
     transition: .2s;
     font-weight: bolder;
+}
+
+/* ID Specific Styles */
+/* This style affects the heading of the listing paragragh to center it on the page and give it an underline. */
+h1#listingHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* This style affects the heading of the listing description to center it on the page, give it an underline, and set top padding to 3%. */
+h1#listingDescription {
+    padding-top: 3%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* This style gives the logo image a black border with a paper looking background image. */
+img#logo {
+    border: 2px solid black;
+    background-image: url(br_paper.png);
 }
